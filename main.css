@@ -1,0 +1,86 @@
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* Paragraphs */
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+
+    /* Background, headings, buttons */
+    --very-light-gray: hsl(0, 0%, 95%)
+
+    --font-size: 15px;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+body {
+    background-color: var(--transparent-white);
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__card {
+    padding: 2.5em 2.8em;
+    color: var(--transparent-white);
+}
+
+.container__card--h2 {
+    color: var(--very-light-gray);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin: .6em 0;
+}
+
+.container__card--p {
+    line-height: 1.8em;
+    font-weight: 400;
+}
+
+.container__card--btn {
+    border: none;
+    font-family: 'Lexend Deca', sans-serif;
+    margin-top: 5em;
+    padding: 1em 2em;
+    border-radius: 2em;
+}
+
+.container__card--btn:hover {
+    background-color: none;
+    border: 1px solid white;
+    color: white;
+}
+
+.orange {
+    background-color: var(--bright-orange);
+    border-radius: 1em 0 0 1em;
+}
+
+.cyan {
+    background-color: var(--dark-cyan);
+}
+
+.dark-cyan {
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 1em 1em 0;
+}
